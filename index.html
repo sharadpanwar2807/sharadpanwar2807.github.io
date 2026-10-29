@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Sharad Panwar: growth and ecosystem marketer, MSc Security Risk Management student at the University of Copenhagen.">
+<title>Sharad Panwar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one narrow reading column, like a field report; metadata sits in a mono margin column on wide screens */
+:root{
+  --bg:#F4F7F8; --surface:#FFFFFF; --fg:#11212B; --muted:#566873; --line:#D6DFE3;
+  --accent:#1C5A88; --signal:#B98200;
+  --display:"Newsreader", Georgia, "Times New Roman", serif;
+  --body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0D151A; --surface:#121D24; --fg:#E4ECF0; --muted:#94A6B1; --line:#22323C; --accent:#79B6E4; --signal:#E8BE52; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0D151A; --surface:#121D24; --fg:#E4ECF0; --muted:#94A6B1; --line:#22323C; --accent:#79B6E4; --signal:#E8BE52; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 var(--body);
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:760px;margin:0 auto;padding-block:40px 72px;display:grid;gap:72px}
+
+header.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px;
+  font:500 13px/1.4 var(--mono);color:var(--muted);letter-spacing:.02em}
+header.top nav{display:flex;gap:20px}
+header.top nav a{color:var(--fg);text-decoration:none}
+header.top nav a:hover{color:var(--accent)}
+
+.hero{display:grid;gap:22px}
+.hero h1{font:400 clamp(36px,6vw,58px)/1.05 var(--display);letter-spacing:-.015em;margin:0;text-wrap:balance}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero p{margin:0;max-width:60ch;font-size:18px;color:var(--fg)}
+.status{display:inline-flex;align-items:center;gap:10px;font:500 13px/1.4 var(--mono);color:var(--fg);
+  border:1px solid var(--line);background:var(--surface);padding:8px 12px;border-radius:4px;width:fit-content;max-width:100%}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--signal);flex:none}
+.links{display:flex;flex-wrap:wrap;gap:18px;font-weight:500}
+
+section{display:grid;gap:24px}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.sec-head h2{font:500 26px/1.2 var(--display);margin:0}
+.sec-head span{font:400 12px/1.4 var(--mono);color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+
+.entry{display:grid;grid-template-columns:150px 1fr;gap:6px 28px}
+.entry .meta{font:400 13px/1.6 var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.entry .body{min-width:0}
+.entry h3{font:500 21px/1.3 var(--display);margin:0 0 6px;text-wrap:balance}
+.entry p{margin:0;color:var(--fg)}
+.entry .lens{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.lens b{font:500 11px/1 var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--accent);
+  border:1px solid var(--line);padding:5px 7px;border-radius:3px}
+.list{display:grid;gap:28px}
+
+.roles{display:grid;gap:18px}
+.role{display:grid;grid-template-columns:150px 1fr;gap:4px 28px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.role:last-child{border-bottom:0;padding-bottom:0}
+.role .meta{font:400 13px/1.6 var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.role h3{font:600 16px/1.4 var(--body);margin:0}
+.role h3 span{font-weight:400;color:var(--muted)}
+.role p{margin:4px 0 0}
+.num{font-family:var(--mono);font-size:.92em;font-variant-numeric:tabular-nums}
+
+.courses{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 28px}
+.course h3{font:600 15px/1.4 var(--body);margin:0 0 4px}
+.course p{margin:0;color:var(--muted);font-size:15px}
+
+.note{font-size:15px;color:var(--muted);max-width:60ch;margin:0}
+footer{font:400 12px/1.6 var(--mono);color:var(--muted);border-top:1px solid var(--line);padding-top:16px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+
+@media (max-width:620px){
+  .entry,.role{grid-template-columns:1fr}
+  .courses{grid-template-columns:1fr}
+  .wrap{gap:56px;padding-block:28px 56px}
+}
+@media (prefers-reduced-motion:no-preference){a{transition:color .15s}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <span>Sharad Panwar · Copenhagen · 55.68°N 12.57°E</span>
+    <nav aria-label="Sections">
+      <a href="#writing">Writing</a>
+      <a href="#work">Work</a>
+      <a href="#studying">Studying</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>I study how organisations <em>fail</em>. Before that, I helped them grow.</h1>
+    <p>Growth and ecosystem marketer with five years in Web3 and SaaS, now doing an MSc in Security Risk Management at the University of Copenhagen. I write about what risk theory explains in the news, from Danish policy to on-chain hacks.</p>
+    <div class="status"><i aria-hidden="true"></i>Open to part-time roles in Copenhagen and remote contract work</div>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/isthatsharad/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#writing">Read the writing</a>
+      <a href="https://bytemedata.substack.com/" target="_blank" rel="noopener">Earlier writing (ByteMeData)</a>
+    </div>
+  </div>
+
+  <section id="writing" aria-labelledby="h-writing">
+    <div class="sec-head"><h2 id="h-writing">Writing</h2><span>Theory, applied</span></div>
+    <div class="list">
+      <article class="entry">
+        <div class="meta">November 2026<br>Coming soon</div>
+        <div class="body">
+          <h3>Drift into failure: a $285M hack is an organisation story, not a code story</h3>
+          <p>Drift Protocol lost $285M in twelve minutes after five days of governance shortcuts. What Perrow, Vaughan and Dekker would have seen coming.</p>
+          <div class="lens"><b>Organization and Risk</b><b>Web3</b></div>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="meta">November 2026<br>In the queue</div>
+        <div class="body">
+          <h3>Nine in ten flags were wrong: Denmark's welfare algorithms and the base-rate problem</h3>
+          <p>Why a fraud model can be accurate and still mostly accuse honest people, and what fintech fraud teams can learn from it.</p>
+          <div class="lens"><b>Knowledge and Methods</b><b>Fintech</b></div>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="meta">December 2026<br>In the queue</div>
+        <div class="body">
+          <h3>When drones became a "hybrid attack"</h3>
+          <p>Securitisation theory was born in Copenhagen. Here's what it says about how Denmark named the airport drone flights.</p>
+          <div class="lens"><b>Security Studies</b><b>Denmark</b></div>
+        </div>
+      </article>
+    </div>
+    <p class="note">Earlier pieces appeared in Youth Ki Awaaz, Medium, Adaface and HRCloud, and are collected on <a href="https://bytemedata.substack.com/" target="_blank" rel="noopener">ByteMeData</a>.</p>
+  </section>
+
+  <section id="work" aria-labelledby="h-work">
+    <div class="sec-head"><h2 id="h-work">Work</h2><span>2020 to 2025</span></div>
+    <div class="roles">
+      <div class="role"><div class="meta">Nov 2023 – Nov 2025</div><div>
+        <h3>Growth Marketing Manager <span>· Aethir</span></h3>
+        <p>Led marketing for a decentralised GPU cloud network from launch through its token generation event. Grew the social audience from <span class="num">58,000</span> to <span class="num">850,000+</span> in about eight months.</p></div></div>
+      <div class="role"><div class="meta">Feb 2024 – Nov 2025</div><div>
+        <h3>Marketing Contributor <span>· Core Foundation</span></h3>
+        <p>Built on-chain dashboards with Dune, DefiLlama, DappRadar and GA4 for a Bitcoin-aligned Layer-1. Grew the Core Weekly newsletter from <span class="num">400</span> to <span class="num">5,300+</span> subscribers.</p></div></div>
+      <div class="role"><div class="meta">Apr 2023 – Oct 2023</div><div>
+        <h3>Head of Marketing <span>· Mainstreet</span></h3>
+        <p>Brand positioning, acquisition and budget allocation for a high-growth digital marketplace.</p></div></div>
+      <div class="role"><div class="meta">Nov 2022 – Mar 2023</div><div>
+        <h3>Growth &amp; Sales Manager <span>· MindPeers</span></h3>
+        <p>Ran B2B sales cycles end to end and brought in enterprise pharmaceutical and media clients.</p></div></div>
+      <div class="role"><div class="meta">Sep 2021 – Oct 2022</div><div>
+        <h3>Growth Marketer <span>· Adaface</span></h3>
+        <p>Technical SEO and go-to-market for a Singapore SaaS company: <span class="num">+15%</span> search visibility, <span class="num">+12%</span> traffic.</p></div></div>
+      <div class="role"><div class="meta">Feb 2021 – Aug 2021</div><div>
+        <h3>Growth Marketer <span>· Recurr</span></h3>
+        <p>Launch strategy and technical SEO: <span class="num">+18%</span> organic traffic.</p></div></div>
+      <div class="role"><div class="meta">Mar 2020 – Jan 2021</div><div>
+        <h3>Research &amp; Content Analyst <span>· AtQuest Sustainable Solutions</span></h3>
+        <p>Qualitative and quantitative research for ESG and sustainability consulting clients.</p></div></div>
+    </div>
+  </section>
+
+  <section id="studying" aria-labelledby="h-studying">
+    <div class="sec-head"><h2 id="h-studying">Studying</h2><span>MSc Security Risk Management · KU</span></div>
+    <div class="courses">
+      <div class="course"><h3>Security Studies</h3><p>How threats get named and acted on, from securitisation to hybrid warfare.</p></div>
+      <div class="course"><h3>Risk Analysis</h3><p>Threat assessment, scenario building and forecasting.</p></div>
+      <div class="course"><h3>Organization and Risk</h3><p>Why organisations fail or stay reliable under pressure.</p></div>
+      <div class="course"><h3>Knowledge and Methods</h3><p>How we know what we claim to know about risk.</p></div>
+    </div>
+    <p class="note">BA (Hons.) Political Science, University of Delhi, 2020. Member of the programme's Academic Committee.</p>
+  </section>
+
+  <footer>
+    <span>sharadpanwar.com</span>
+    <span>English · Hindi · Danish (learning)</span>
+  </footer>
+</div>
+</body>
+</html>
