@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DePIN, explained: paying the crowd to build infrastructure | Sharad Panwar</title>
+<meta name="description" content="Decentralised physical infrastructure networks use tokens to get ordinary people to supply GPUs, hotspots and storage. How the model works, and where it can break.">
+<meta property="og:title" content="DePIN, explained: paying the crowd to build infrastructure | Sharad Panwar">
+<meta property="og:description" content="Decentralised physical infrastructure networks use tokens to get ordinary people to supply GPUs, hotspots and storage. How the model works, and where it can break.">
+<meta property="og:url" content="https://sharadpanwar.com/writing/depin-explained/">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://sharadpanwar.com/writing/depin-explained/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="home" href="/">Sharad Panwar · Copenhagen · 55.68°N 12.57°E</a>
+    <nav aria-label="Sections">
+      <a href="/writing/">Writing</a>
+      <a href="/#work">Work</a>
+      <a href="/#studying">Studying</a>
+    </nav>
+  </header>
+
+  <article class="article">
+    <div class="banner"><svg viewBox="0 0 1200 360" role="img" aria-label="" xmlns="http://www.w3.org/2000/svg">
+<line class="bn-l" x1="0" y1="0" x2="0" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="60" y1="0" x2="60" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="120" y1="0" x2="120" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="180" y1="0" x2="180" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="240" y1="0" x2="240" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="300" y1="0" x2="300" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="360" y1="0" x2="360" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="420" y1="0" x2="420" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="480" y1="0" x2="480" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="540" y1="0" x2="540" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="600" y1="0" x2="600" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="660" y1="0" x2="660" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="720" y1="0" x2="720" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="780" y1="0" x2="780" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="840" y1="0" x2="840" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="900" y1="0" x2="900" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="960" y1="0" x2="960" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="1020" y1="0" x2="1020" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="1080" y1="0" x2="1080" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="1140" y1="0" x2="1140" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="1200" y1="0" x2="1200" y2="360" stroke-width="1"/>
+<line class="bn-l" x1="0" y1="0" x2="1200" y2="0" stroke-width="1"/>
+<line class="bn-l" x1="0" y1="60" x2="1200" y2="60" stroke-width="1"/>
+<line class="bn-l" x1="0" y1="120" x2="1200" y2="120" stroke-width="1"/>
+<line class="bn-l" x1="0" y1="180" x2="1200" y2="180" stroke-width="1"/>
+<line class="bn-l" x1="0" y1="240" x2="1200" y2="240" stroke-width="1"/>
+<line class="bn-l" x1="0" y1="300" x2="1200" y2="300" stroke-width="1"/>
+<line class="bn-l" x1="0" y1="360" x2="1200" y2="360" stroke-width="1"/>
+<rect class="bn-a" x="84" y="155" width="12" height="45" rx="2" opacity="0.38"/>
+<rect class="bn-a" x="84" y="228" width="12" height="32" rx="2" opacity="0.80"/>
+<rect class="bn-s" x="84" y="306" width="12" height="14" rx="2" opacity="0.40"/>
+<rect class="bn-a" x="144" y="172" width="12" height="28" rx="2" opacity="0.87"/>
+<rect class="bn-a" x="144" y="215" width="12" height="45" rx="2" opacity="0.36"/>
+<rect class="bn-a" x="144" y="294" width="12" height="26" rx="2" opacity="0.71"/>
+<rect class="bn-a" x="204" y="282" width="12" height="38" rx="2" opacity="0.43"/>
+<rect class="bn-a" x="264" y="185" width="12" height="15" rx="2" opacity="0.42"/>
+<rect class="bn-a" x="324" y="99" width="12" height="41" rx="2" opacity="0.54"/>
+<rect class="bn-a" x="324" y="248" width="12" height="12" rx="2" opacity="0.57"/>
+<rect class="bn-a" x="324" y="285" width="12" height="35" rx="2" opacity="0.90"/>
+<rect class="bn-a" x="384" y="43" width="12" height="37" rx="2" opacity="0.59"/>
+<rect class="bn-a" x="384" y="181" width="12" height="19" rx="2" opacity="0.40"/>
+<rect class="bn-a" x="444" y="55" width="12" height="25" rx="2" opacity="0.55"/>
+<rect class="bn-a" x="444" y="179" width="12" height="21" rx="2" opacity="0.36"/>
+<rect class="bn-a" x="444" y="307" width="12" height="13" rx="2" opacity="0.83"/>
+<rect class="bn-a" x="504" y="219" width="12" height="41" rx="2" opacity="0.75"/>
+<rect class="bn-a" x="504" y="297" width="12" height="23" rx="2" opacity="0.64"/>
+<rect class="bn-s" x="564" y="67" width="12" height="13" rx="2" opacity="0.51"/>
+<rect class="bn-a" x="564" y="168" width="12" height="32" rx="2" opacity="0.85"/>
+<rect class="bn-a" x="564" y="227" width="12" height="33" rx="2" opacity="0.86"/>
+<rect class="bn-a" x="624" y="37" width="12" height="43" rx="2" opacity="0.76"/>
+<rect class="bn-a" x="624" y="217" width="12" height="43" rx="2" opacity="0.52"/>
+<rect class="bn-a" x="624" y="305" width="12" height="15" rx="2" opacity="0.59"/>
+<rect class="bn-a" x="684" y="61" width="12" height="19" rx="2" opacity="0.85"/>
+<rect class="bn-s" x="684" y="110" width="12" height="30" rx="2" opacity="0.45"/>
+<rect class="bn-s" x="684" y="176" width="12" height="24" rx="2" opacity="0.48"/>
+<rect class="bn-a" x="684" y="220" width="12" height="40" rx="2" opacity="0.55"/>
+<rect class="bn-a" x="744" y="157" width="12" height="43" rx="2" opacity="0.60"/>
+<rect class="bn-a" x="744" y="217" width="12" height="43" rx="2" opacity="0.48"/>
+<rect class="bn-a" x="744" y="298" width="12" height="22" rx="2" opacity="0.76"/>
+<rect class="bn-a" x="804" y="110" width="12" height="30" rx="2" opacity="0.55"/>
+<rect class="bn-a" x="804" y="230" width="12" height="30" rx="2" opacity="0.39"/>
+<rect class="bn-a" x="864" y="234" width="12" height="26" rx="2" opacity="0.69"/>
+<rect class="bn-s" x="924" y="42" width="12" height="38" rx="2" opacity="0.45"/>
+<rect class="bn-a" x="924" y="190" width="12" height="10" rx="2" opacity="0.64"/>
+<rect class="bn-a" x="924" y="283" width="12" height="37" rx="2" opacity="0.54"/>
+<rect class="bn-a" x="984" y="59" width="12" height="21" rx="2" opacity="0.39"/>
+<rect class="bn-a" x="984" y="284" width="12" height="36" rx="2" opacity="0.58"/>
+<rect class="bn-a" x="1044" y="125" width="12" height="15" rx="2" opacity="0.51"/>
+<rect class="bn-a" x="1044" y="232" width="12" height="28" rx="2" opacity="0.69"/>
+<rect class="bn-a" x="1044" y="307" width="12" height="13" rx="2" opacity="0.78"/>
+<rect class="bn-a" x="1104" y="110" width="12" height="30" rx="2" opacity="0.55"/>
+<rect class="bn-a" x="1104" y="186" width="12" height="14" rx="2" opacity="0.52"/>
+<rect class="bn-a" x="1104" y="214" width="12" height="46" rx="2" opacity="0.79"/>
+<rect class="bn-a" x="1104" y="305" width="12" height="15" rx="2" opacity="0.53"/>
+</svg></div>
+    <div class="kicker"><span>January 2024</span><span>5 min read</span><span>Earlier writing</span></div>
+    <h1>DePIN, explained: paying the crowd to build infrastructure</h1>
+    <p class="dek">Decentralised physical infrastructure networks use tokens to get ordinary people to supply GPUs, hotspots and storage. How the model works, and where it can break.</p>
+    <div class="lens"><b>Web3</b><b>Infrastructure</b></div>
+    <p class="origin">First published on ByteMeData in January 2024 as "DePIN: Next Big Thing in Crypto?". Revised in October 2026, with a section on the risks added. Figures are from Messari's State of DePIN 2023 report as cited at the time.</p>
+    <div class="prose">
+<p>Most crypto projects live entirely on-chain. DePIN, short for decentralised physical infrastructure networks, is different. It uses crypto incentives to get ordinary people and companies to supply real-world hardware: wireless hotspots, storage, GPUs, sensors and more.</p>
+
+<h2>How it works</h2>
+<p>The model has three parts.</p>
+<ol>
+<li><b>Supply.</b> Anyone with the right hardware connects it to the network: a hotspot on a roof, spare disk space, an idle GPU.</li>
+<li><b>Rewards.</b> The network pays those providers in its token, usually based on how much useful capacity they supply.</li>
+<li><b>Demand.</b> Customers pay to use the combined capacity, often more cheaply than from a single large provider.</li>
+</ol>
+<p>Early on, token rewards cover the gap while there are few paying customers. The hope is that demand grows until real usage, not new tokens, pays the providers.</p>
+
+<h2>Why it got attention</h2>
+<p>In its <em>State of DePIN 2023</em> report, the research firm Messari argued that DePIN could add around $1 trillion to global GDP over the next decade, and counted more than 650 tokens across compute, wireless, storage and AI services. Well-known examples include Filecoin for storage, Helium for wireless and Render for GPU computing. I later worked at Aethir, a decentralised GPU cloud network built on the same idea.</p>
+<p>The appeal is that DePIN ties crypto to something physical and useful, rather than to speculation alone.</p>
+
+<h2>Where it can break</h2>
+<p>Looking at DePIN now through a risk lens, the model has clear weak points.</p>
+<ul>
+<li><b>Subsidised demand.</b> If token rewards are the main reason providers join, the network can look busy while few customers actually pay. When the token price falls, providers leave.</li>
+<li><b>Quality control.</b> Anonymous providers vary in reliability. Enterprise customers need guarantees a crowd can struggle to give.</li>
+<li><b>Fake supply.</b> Wherever rewards depend on reported capacity or location, some providers will try to fake it. Verification is a security problem, not just an engineering one.</li>
+<li><b>Regulation.</b> Physical hardware sits in real jurisdictions, under telecoms, data and tax rules.</li>
+</ul>
+
+<h2>The question to ask any DePIN project</h2>
+<p>How much of the money reaching providers comes from paying customers, and how much from newly issued tokens? A network where the first number keeps growing is building infrastructure. A network that depends on the second is running on its own token price.</p>
+    </div>
+    <p class="backlink"><a href="/writing/">← All writing</a></p>
+  </article>
+  <footer>
+    <span>sharadpanwar.com</span>
+    <span>English · Hindi · Danish (learning)</span>
+  </footer>
+</div>
+</body>
+</html>
